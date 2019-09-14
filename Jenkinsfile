@@ -6,5 +6,10 @@ pipeline {
         build(job: 'mytestbuildjob', quietPeriod: 1, wait: true)
       }
     }
+    stage('email') {
+      steps {
+        echo 'test'
+      }
+    }
   }
 }
